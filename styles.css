@@ -1,0 +1,88 @@
+body {
+  background: top no-repeat url("image/color.svg");
+  padding-left: 192px;
+}
+
+/*1920*/
+.wrapper {
+  margin: auto;
+  width: 100%;
+}
+.header {
+  padding: 77px 0px 40px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo,
+.menu {
+  display: inline-block;
+}
+
+.logo {
+  width: 146px;
+  height: 55px;
+  background: url("image/Vector.svg");
+}
+.menu {
+  padding-right: 110px;
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  position: relative;
+  margin-right: 38px;
+  font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
+  color: #f8eee4;
+  text-decoration: none;
+  transition: all 2s ease;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__item:hover {
+  position: relative;
+  opacity: 0.5;
+  border: 1px solid rgb(3, 53, 9);
+  border-radius: 10px;
+
+}
+.main {
+  display: flex;
+}
+.main__title {
+  padding-top: 95px;
+  border-top: 1px solid transparent;
+  margin: 0 0 36px 0;
+  font: 700 280px/371px "pt_serif";
+  color: #f8eee4;
+  opacity: 0.4;
+  margin-bottom: -220px;
+}
+.main__text {
+  margin-left: 82px;
+  margin-bottom: 14px;
+  font: 700 98px/130px "pt_serif";
+  color: #f8eee4;
+}
+.main__subtitle {
+  margin-top: 8px;
+  max-width: 550px;
+  margin-left: 18px;
+  font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
+  color: #f8eee4;
+}
+.main__button {
+  margin-top: 19px;
+  text-align: center;
+  min-width: 262px;
+  display: inline-block;
+  font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
+  color: #f8eee4;
+  background: #d4bea3;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 43px;
+  padding: 16px;
+  margin-left: 22px;
+}
+
