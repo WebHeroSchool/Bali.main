@@ -1,6 +1,7 @@
 body {
-  background: top no-repeat url("image/color.svg");
-  padding-left: 192px;
+  background: url("image/color.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*1920*/
@@ -9,7 +10,7 @@ body {
   width: 100%;
 }
 .header {
-  padding: 77px 0px 40px 0px;
+  padding: 77px 0px 40px 191px;
   display: flex;
   justify-content: space-between;
 }
@@ -19,9 +20,9 @@ body {
 }
 
 .logo {
+  background-repeat: no-repeat;
   width: 146px;
   height: 55px;
-  background: url("image/Vector.svg");
 }
 .menu {
   padding-right: 110px;
@@ -40,12 +41,13 @@ body {
   margin-right: 0;
 }
 .menu__item:hover {
-  position: relative;
+  position: fixed;
   opacity: 0.5;
   border: 1px solid rgb(3, 53, 9);
   border-radius: 10px;
 }
 .main {
+  padding-left: 192px;
   display: inline-block;
 }
 .main__title {
@@ -73,6 +75,7 @@ body {
 .main__button {
   margin-top: 19px;
   text-align: center;
+
   min-width: 262px;
   display: inline-block;
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
@@ -83,23 +86,108 @@ body {
   border-radius: 43px;
   padding: 16px;
   margin-left: 22px;
+  transition: all 1s ease;
+}
+.main__button:hover {
+  position: fixed;
+  opacity: 0.5;
+  border: 1px solid rgb(3, 53, 9);
 }
 .foto {
+  align-items: center;
+  position: relative;
   display: flex;
   margin-top: -440px;
-  margin-left: 392px;
+  margin-left: 584px;
 }
 .foto__three_one {
   margin-left: 450px;
   margin-right: 32px;
   border-radius: 5px;
+  width: 317px;
+  height: 421px;
 }
 
 .foto__three {
   margin-right: 32px;
   border-radius: 5px;
+  width: 284px;
+  height: 379px;
 }
 .foto:last-child {
   border-radius: 5px;
+  width: 253px;
+  height: 379px;
 }
 /*1366*/
+@media (max-width: 1366px) {
+  .header {
+    padding: 55px 0px 40px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding-left: 131px;
+    width: 109px;
+    height: 39px;
+  }
+  .menu {
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+  }
+  .menu__item {
+    margin-right: 26px;
+    font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
+  }
+  .main {
+    padding-left: 138px;
+  }
+  .main__title {
+    padding-top: 58px;
+    font: 700 200px/265px "pt_serif";
+    margin-bottom: -165px;
+  }
+  .main__text {
+    margin-left: 55px;
+    margin-bottom: 14px;
+    font: 700 70px/93px "pt_serif";
+  }
+  .main__subtitle {
+    max-width: 399px;
+    margin-left: 12px;
+    font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
+  }
+  .main__button {
+    margin-top: 7px;
+    min-width: 185px;
+    font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
+    padding: 12px;
+    margin-left: 12px;
+  }
+  .foto {
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin-top: -370px;
+    margin-left: 350px;
+  }
+  .foto__three_one {
+    margin-right: 32px;
+    border-radius: 5px;
+    width: 225px;
+    height: 300px;
+  }
+  .foto__three {
+    margin-right: 32px;
+    border-radius: 5px;
+    width: 202px;
+    height: 270px;
+  }
+  .foto:last-child {
+    border-radius: 5px;
+    width: 180px;
+    height: 270px;
+  }
+}
