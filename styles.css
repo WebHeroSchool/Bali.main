@@ -44,10 +44,9 @@ body {
   opacity: 0.5;
   border: 1px solid rgb(3, 53, 9);
   border-radius: 10px;
-
 }
 .main {
-  display: flex;
+  display: inline-block;
 }
 .main__title {
   padding-top: 95px;
@@ -85,4 +84,22 @@ body {
   padding: 16px;
   margin-left: 22px;
 }
+.foto {
+  display: flex;
+  margin-top: -440px;
+  margin-left: 392px;
+}
+.foto__three_one {
+  margin-left: 450px;
+  margin-right: 32px;
+  border-radius: 5px;
+}
 
+.foto__three {
+  margin-right: 32px;
+  border-radius: 5px;
+}
+.foto:last-child {
+  border-radius: 5px;
+}
+/*1366*/
