@@ -83,10 +83,11 @@ body {
   border-radius: 43px;
   padding: 16px;
   margin-left: 22px;
-  transition: all 1s ease;
+  transition: opacity 1s;
 }
 .main__button:hover {
   opacity: 0.5;
+  background-color: #fcc0c0;
 }
 .foto {
   align-items: center;
@@ -111,115 +112,86 @@ body {
 }
 /*1366*/
 @media (max-width: 1366px) {
-  .wrapper {
-    margin: auto;
-    width: 100%;
-  }
   .header {
     padding: 54px 0px 40px 133px;
-    display: flex;
-    justify-content: space-between;
   }
-  .logo,
-  .menu {
-    display: inline-block;
-  }
-
   .logo {
-    background-repeat: no-repeat;
     width: 104px;
     height: 39px;
   }
   .menu {
     padding-right: 77px;
-    display: flex;
-    align-items: center;
   }
   .menu__item {
-    position: relative;
     margin-right: 25px;
-    font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
-    color: #f8eee4;
-    text-decoration: none;
-    transition: all 1s ease;
-    cursor: pointer;
-  }
-  .menu__item:last-child {
-    margin-right: 0;
-  }
-  .menu__item:hover {
-    opacity: 0.5;
+    font-size: 16px;
+    line-height: 19px;
   }
   .main {
     padding-left: 134px;
-    display: inline-block;
   }
   .main__title {
     padding-top: 57px;
-    border-top: 1px solid transparent;
-    margin: 0 0 36px 0;
-    font: 700 200px/265px "pt_serif";
-    color: #f8eee4;
-    opacity: 0.4;
     margin-bottom: -164px;
+    font-size: 200px;
+    line-height: 265px;
   }
   .main__text {
     margin-left: 59px;
-    margin-bottom: 14px;
-    font: 700 70px/93px "pt_serif";
-    color: #f8eee4;
+    font-size: 70px;
+    line-height: 93px;
   }
   .main__subtitle {
-    margin-top: 8px;
     max-width: 399px;
     margin-left: 14px;
-    font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
-    color: #f8eee4;
+    font-size: 16px;
+    line-height: 19px;
   }
   .main__button {
     margin-top: 7px;
-    text-align: center;
     min-width: 182px;
-    display: inline-block;
-    font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
-    color: #f8eee4;
-    background: #d4bea3;
-    text-decoration: none;
-    border-radius: 43px;
     padding: 13px;
     margin-left: 16px;
-    transition: opacity 1s;
-    cursor: pointer;
-  }
-  .main__button:hover {
-    opacity: 0.5;
-    background: rgb(238, 182, 182);
+    font-size: 16px;
+    line-height: 19px;
   }
   .foto {
-    align-items: center;
-    position: relative;
-    display: flex;
     margin-top: -315px;
     margin-left: 284px;
   }
   .foto__three_one {
     margin-left: 450px;
     margin-right: 26px;
-    border-radius: 5px;
     width: 225px;
     height: 300px;
   }
-
   .foto__three_to {
     margin-right: 26px;
-    border-radius: 5px;
     width: 202px;
     height: 270px;
   }
-
   .foto__three_last {
-    border-radius: 5px;
     width: 146px;
     height: 270px;
   }
+}
+@media (max-width: 1024px) {
+}
+.header {
+  padding-left: 33px;
+}
+.menu {
+  padding-right: 34px;
+}
+.main {
+  padding-left: 33px;
+}
+.main__button {
+  margin-top: 11px;
+  min-width: 186px;
+  padding: 11px;
+}
+.foto {
+  margin-top: -312px;
+  margin-left: 52px;
 }
