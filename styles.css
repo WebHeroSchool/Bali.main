@@ -101,12 +101,125 @@ body {
   border-radius: 5px;
 }
 
-.foto__three {
+.foto__three_to {
   margin-right: 32px;
   border-radius: 5px;
 }
 
-.foto:last-child {
+.foto__three_last {
   border-radius: 5px;
 }
 /*1366*/
+@media (max-width: 1366px) {
+  .wrapper {
+    margin: auto;
+    width: 100%;
+  }
+  .header {
+    padding: 54px 0px 40px 133px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo,
+  .menu {
+    display: inline-block;
+  }
+
+  .logo {
+    background-repeat: no-repeat;
+    width: 104px;
+    height: 39px;
+  }
+  .menu {
+    padding-right: 77px;
+    display: flex;
+    align-items: center;
+  }
+  .menu__item {
+    position: relative;
+    margin-right: 25px;
+    font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
+    color: #f8eee4;
+    text-decoration: none;
+    transition: all 1s ease;
+    cursor: pointer;
+  }
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+  .menu__item:hover {
+    opacity: 0.5;
+  }
+  .main {
+    padding-left: 134px;
+    display: inline-block;
+  }
+  .main__title {
+    padding-top: 57px;
+    border-top: 1px solid transparent;
+    margin: 0 0 36px 0;
+    font: 700 200px/265px "pt_serif";
+    color: #f8eee4;
+    opacity: 0.4;
+    margin-bottom: -164px;
+  }
+  .main__text {
+    margin-left: 59px;
+    margin-bottom: 14px;
+    font: 700 70px/93px "pt_serif";
+    color: #f8eee4;
+  }
+  .main__subtitle {
+    margin-top: 8px;
+    max-width: 399px;
+    margin-left: 14px;
+    font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
+    color: #f8eee4;
+  }
+  .main__button {
+    margin-top: 7px;
+    text-align: center;
+    min-width: 182px;
+    display: inline-block;
+    font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
+    color: #f8eee4;
+    background: #d4bea3;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 43px;
+    padding: 13px;
+    margin-left: 16px;
+    transition: all 1s ease;
+  }
+  .main__button:hover {
+    opacity: 0.5;
+    background: rgb(236, 148, 148);
+  }
+  .foto {
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin-top: -315px;
+    margin-left: 284px;
+  }
+  .foto__three_one {
+    margin-left: 450px;
+    margin-right: 26px;
+    border-radius: 5px;
+    width: 225px;
+    height: 300px;
+  }
+
+  .foto__three_to {
+    margin-right: 26px;
+    border-radius: 5px;
+    width: 202px;
+    height: 270px;
+  }
+
+  .foto__three_last {
+    border-radius: 5px;
+    width: 146px;
+    height: 270px;
+  }
+}
