@@ -184,16 +184,16 @@ body {
     font: 16px/19px Museo Sans Cyrl, arial, helvetica, sans-serif;
     color: #f8eee4;
     background: #d4bea3;
-    cursor: pointer;
     text-decoration: none;
     border-radius: 43px;
     padding: 13px;
     margin-left: 16px;
-    transition: all 1s ease;
+    transition: opacity 1s;
+    cursor: pointer;
   }
   .main__button:hover {
     opacity: 0.5;
-    background: rgb(236, 148, 148);
+    background: rgb(238, 182, 182);
   }
   .foto {
     align-items: center;
