@@ -176,22 +176,34 @@ body {
   }
 }
 @media (max-width: 1024px) {
+  .header {
+    padding-left: 33px;
+  }
+  .menu {
+    padding-right: 34px;
+  }
+  .main {
+    padding-left: 33px;
+  }
+  .main__button {
+    margin-top: 11px;
+    min-width: 186px;
+    padding: 11px;
+  }
+  .foto {
+    margin-top: -312px;
+    margin-left: 52px;
+  }
+  .foto__three_last {
+    width: 35px;
+  }
 }
-.header {
-  padding-left: 33px;
-}
-.menu {
-  padding-right: 34px;
-}
-.main {
-  padding-left: 33px;
-}
-.main__button {
-  margin-top: 11px;
-  min-width: 186px;
-  padding: 11px;
-}
-.foto {
-  margin-top: -312px;
-  margin-left: 52px;
+@media (max-width: 760px) {
+  .header {
+    padding-top: 32px;
+  }
+
+  .menu {
+    display: none;
+  }
 }
