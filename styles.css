@@ -44,6 +44,89 @@ body {
 .menu__item:hover {
   opacity: 0.5;
 }
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+  background: black;
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+  background: black;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background: black;
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 52px;
+  right: 32px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fcf5ed;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  background: #ffffff;
+  list-style: none;
+  text-align: center;
+  transition-duration: 3s;
+}
+.menu__it {
+  display: block;
+  padding: 28px 26px;
+  color: #333;
+  font-family: Museo Sans Cyrl, arial, helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-decoration: none;
+  transition-duration: 2s;
+}
+.menu__it:hover {
+  opacity: 1;
+  color: #fcc0c0;
+}
 .main {
   padding-left: 192px;
   display: inline-block;
@@ -110,6 +193,8 @@ body {
 .foto__three_last {
   border-radius: 5px;
 }
+/*мобилка*/
+
 /*1366*/
 @media (max-width: 1366px) {
   .header {
@@ -182,6 +267,7 @@ body {
   .menu {
     padding-right: 34px;
   }
+
   .main {
     padding-left: 33px;
   }
@@ -198,12 +284,52 @@ body {
     width: 35px;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .header {
     padding-top: 32px;
   }
-
+  @media (max-width: 768px) {
+  }
   .menu {
+    display: none;
+  }
+  .main {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .main__title {
+    font-size: 170px;
+    line-height: 225px;
+    padding-right: 10px;
+    padding-top: 0px;
+    margin-bottom: -127px;
+  }
+  .main__text {
+    margin-left: 66px;
+    font-size: 60px;
+    line-height: 80px;
+    margin-bottom: 35px;
+  }
+  .main__subtitle {
+    max-width: 297px;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .main__button {
+    margin-top: 16px;
+    margin-left: 0px;
+  }
+  .foto {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .menu_btn {
     display: none;
   }
 }
