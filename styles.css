@@ -93,21 +93,15 @@ body {
   margin-left: 450px;
   margin-right: 32px;
   border-radius: 5px;
-  width: 318px;
-  height: 420px;
 }
 
 .foto__gallery {
   margin-right: 32px;
   border-radius: 5px;
-  width: 284px;
-  height: 380px;
 }
 
 .foto__gallery:last-child {
   border-radius: 5px;
-  width: 284px;
-  height: 380px;
 }
 
 /*1366*/
@@ -159,18 +153,18 @@ body {
     margin-top: -315px;
     margin-left: 284px;
   }
-
+  .foto__gallery {
+    margin-right: 26px;
+    width: 202px;
+    height: 270px;
+  }
   .foto__gallery_big {
     margin-left: 450px;
     margin-right: 26px;
     width: 225px;
     height: 300px;
   }
-  .foto__gallery {
-    margin-right: 26px;
-    width: 202px;
-    height: 270px;
-  }
+
   .foto__gallery:last-child {
     width: 146px;
     height: 270px;
