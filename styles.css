@@ -20,11 +20,12 @@ body {
   height: 55px;
 }
 .menu {
+  margin-top: 14px;
   padding-right: 110px;
 }
 .menu__item {
   position: relative;
-  margin-right: 38px;
+  margin-right: 34px;
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
   color: #f8eee4;
   text-decoration: none;
@@ -111,10 +112,11 @@ body {
     height: 39px;
   }
   .menu {
-    padding-right: 77px;
+    margin-top: 10px;
+    padding-right: 74px;
   }
   .menu__item {
-    margin-right: 25px;
+    margin-right: 22px;
     font-size: 16px;
     line-height: 19px;
   }
@@ -172,7 +174,8 @@ body {
     padding-left: 33px;
   }
   .menu {
-    padding-right: 34px;
+    margin-top: 12px;
+    padding-right: 30px;
   }
 
   .main {
@@ -282,7 +285,7 @@ body {
   .main {
     text-align: center;
     padding-left: 0px;
-    padding-right: 10px;
+    padding-top: 20px;
   }
   .main__title {
     font-size: 170px;
