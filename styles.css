@@ -4,17 +4,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-/*1920*/
 .wrapper {
   width: 100%;
 }
 .header {
-  padding: 81px 0px 40px 191px;
+  padding: 81px 0 40px 191px;
   display: flex;
   justify-content: space-between;
 }
-
 .logo {
   background-repeat: no-repeat;
   width: 146px;
@@ -42,12 +39,10 @@ body {
 .main {
   position: relative;
 }
-
 .section {
   padding-left: 192px;
   display: inline-block;
 }
-
 .section__title {
   border-top: 1px solid transparent;
   margin: 95px 0 36px 0;
@@ -55,14 +50,12 @@ body {
   color: rgba(192, 192, 192, 0.4);
   margin-bottom: -224px;
 }
-
 .section__text {
   margin-left: 82px;
   margin-bottom: 14px;
   font: 700 98px/130px "pt_serif";
   color: #f8eee4;
 }
-
 .section__subtitle {
   margin-top: 8px;
   max-width: 550px;
@@ -70,7 +63,6 @@ body {
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
   color: #f8eee4;
 }
-
 .section__button {
   margin-top: 15px;
   text-align: center;
@@ -85,26 +77,22 @@ body {
   margin-left: 22px;
   transition: opacity 1s;
 }
-
 .section__button:hover {
   opacity: 0.5;
   background-color: #fcc0c0;
 }
-
 .foto {
   align-items: center;
   display: flex;
   margin-top: -443px;
   margin-left: 584px;
 }
-
 .foto__gallery {
   height: 380px;
   width: 284px;
   margin-right: 32px;
   border-radius: 5px;
 }
-
 .foto__gallery_big {
   height: 422px;
   width: 317px;
@@ -112,18 +100,15 @@ body {
   margin-right: 32px;
   border-radius: 5px;
 }
-
 .foto__gallery:last-child {
   height: 380px;
   width: 284px;
   border-radius: 5px;
 }
-
 @media (max-width: 1600px) {
   .header {
-    padding: 70px 0px 40px 127px;
+    padding: 70px 0 40px 127px;
   }
-
   .main {
     margin-top: -80px;
     margin-left: -95px;
@@ -132,67 +117,56 @@ body {
     height: 270px;
     width: 202px;
   }
-
   .foto__gallery_big {
     height: 300px;
     width: 225px;
   }
-
   .foto__gallery:last-child {
     height: 270px;
     width: 202px;
   }
 }
-/*1366*/
 @media (max-width: 1366px) {
   .header {
-    padding: 55px 0px 40px 133px;
+    padding: 55px 0 40px 133px;
   }
-
   .logo {
     width: 104px;
     height: 39px;
   }
-
   .menu {
     margin-top: 10px;
     padding-right: 63px;
   }
-
   .menu__item {
     margin-right: 22px;
     font-size: 16px;
     line-height: 19px;
   }
-
   .main {
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-left: 0;
   }
   .section {
     padding-left: 134px;
   }
-
   .section__title {
     margin-top: 57px;
     margin-bottom: -164px;
     font-size: 200px;
     line-height: 265px;
   }
-
   .section__text {
     margin-left: 59px;
     font-size: 70px;
     line-height: 93px;
   }
-
   .section__subtitle {
     max-width: 399px;
     margin-left: 14px;
     font-size: 16px;
     line-height: 19px;
   }
-
   .section__button {
     margin-top: 7px;
     min-width: 182px;
@@ -201,97 +175,80 @@ body {
     font-size: 16px;
     line-height: 19px;
   }
-
   .foto {
     margin-top: -315px;
     margin-left: 284px;
   }
-
   .foto__gallery {
     margin-right: 26px;
     width: 202px;
     height: 270px;
   }
-
   .foto__gallery_big {
     margin-left: 450px;
     margin-right: 26px;
     width: 225px;
     height: 300px;
   }
-
   .foto__gallery:last-child {
     width: 146px;
     height: 270px;
   }
 }
-
 @media (max-width: 1024px) {
   .header {
     padding-left: 33px;
   }
-
   .menu {
     margin-top: 12px;
     padding-right: 30px;
   }
-
   .main {
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
   }
-
   .section {
     padding-left: 33px;
   }
-
   .section__button {
     margin-top: 11px;
     min-width: 186px;
     padding: 11px;
   }
-
   .foto {
     margin-top: -312px;
     margin-left: 52px;
   }
-
   .foto__gallery:last-child {
     width: 35px;
   }
 }
-
 @media (max-width: 768px) {
   #menu__toggle {
     opacity: 0;
   }
-
   #menu__toggle:checked ~ .menu__btn > span {
     top: -12px;
     right: -8px;
     transform: rotate(45deg);
     background: black;
   }
-
   #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     transform: rotate(0);
     background: black;
   }
-
   #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     transform: rotate(90deg);
     background: black;
   }
-
   #menu__toggle:checked ~ .menu {
     visibility: visible;
     left: 0;
   }
-
   .menu__btn {
     display: flex;
     align-items: center;
@@ -303,7 +260,6 @@ body {
     cursor: pointer;
     z-index: 2;
   }
-
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
@@ -314,17 +270,14 @@ body {
     background-color: #fcf5ed;
     transition-duration: 0.25s;
   }
-
   .menu__btn > span::before {
     content: "";
     top: -8px;
   }
-
   .menu__btn > span::after {
     content: "";
     top: 8px;
   }
-
   .menu {
     display: block;
     position: fixed;
@@ -341,12 +294,11 @@ body {
     transition-duration: 3s;
     z-index: 1;
   }
-
   .menu__item {
-    margin-right: 0px;
+    margin-right: 0;
     text-transform: lowercase;
     display: block;
-    padding: 12px 0px;
+    padding: 12px 0;
     color: #333;
     font-family: Museo Sans Cyrl900, arial, helvetica, sans-serif;
     font-size: 30px;
@@ -354,41 +306,34 @@ body {
     text-decoration: none;
     transition-duration: 2s;
   }
-
   .menu__item:hover {
     opacity: 1;
     color: #fcc0c0;
   }
-
   .header {
     padding-top: 32px;
   }
-
   .main {
     text-align: center;
   }
-
   .section {
     text-align: center;
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 20px;
   }
-
   .section__title {
     font-size: 170px;
     line-height: 225px;
     padding-right: 10px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: -127px;
   }
-
   .section__text {
     margin-left: 66px;
     font-size: 60px;
     line-height: 80px;
     margin-bottom: 35px;
   }
-
   .section__subtitle {
     max-width: 297px;
     margin-left: 30px;
@@ -397,7 +342,7 @@ body {
   }
   .section__button {
     margin-top: 16px;
-    margin-left: 0px;
+    margin-left: 0;
   }
   .foto {
     display: none;
