@@ -9,7 +9,6 @@ body {
 .wrapper {
   width: 100%;
 }
-
 .header {
   padding: 81px 0px 40px 191px;
   display: flex;
@@ -43,36 +42,31 @@ body {
 .main {
   position: relative;
 }
-
-.section {
+.main {
   padding-left: 192px;
   display: inline-block;
 }
-
-.section__title {
+.main__title {
   border-top: 1px solid transparent;
   margin: 95px 0 36px 0;
   font: 700 280px/371px "pt_serif";
   color: rgba(192, 192, 192, 0.4);
   margin-bottom: -224px;
 }
-
-.section__text {
+.main__text {
   margin-left: 82px;
   margin-bottom: 14px;
   font: 700 98px/130px "pt_serif";
   color: #f8eee4;
 }
-
-.section__subtitle {
+.main__subtitle {
   margin-top: 8px;
   max-width: 550px;
   margin-left: 18px;
   font: 22px/26px Museo Sans Cyrl, arial, helvetica, sans-serif;
   color: #f8eee4;
 }
-
-.section__button {
+.main__button {
   margin-top: 15px;
   text-align: center;
   display: inline-block;
@@ -86,8 +80,7 @@ body {
   margin-left: 22px;
   transition: opacity 1s;
 }
-
-.section__button:hover {
+.main__button:hover {
   opacity: 0.5;
   background-color: #fcc0c0;
 }
@@ -156,31 +149,31 @@ body {
     margin-top: 0px;
     margin-left: 0px;
   }
-  .section {
+  .main {
     padding-left: 134px;
   }
 
-  .section__title {
+  .main__title {
     margin-top: 57px;
     margin-bottom: -164px;
     font-size: 200px;
     line-height: 265px;
   }
 
-  .section__text {
+  .main__text {
     margin-left: 59px;
     font-size: 70px;
     line-height: 93px;
   }
 
-  .section__subtitle {
+  .main__subtitle {
     max-width: 399px;
     margin-left: 14px;
     font-size: 16px;
     line-height: 19px;
   }
 
-  .section__button {
+  .main__button {
     margin-top: 7px;
     min-width: 182px;
     padding: 13px;
@@ -228,11 +221,11 @@ body {
     margin-top: 0px;
   }
 
-  .section {
+  .main {
     padding-left: 33px;
   }
 
-  .section__button {
+  .main__button {
     margin-top: 11px;
     min-width: 186px;
     padding: 11px;
@@ -348,13 +341,13 @@ body {
     text-align: center;
   }
 
-  .section {
+  .main {
     text-align: center;
     padding-left: 0px;
     padding-top: 20px;
   }
 
-  .section__title {
+  .main__title {
     font-size: 170px;
     line-height: 225px;
     padding-right: 10px;
@@ -362,30 +355,27 @@ body {
     margin-bottom: -127px;
   }
 
-  .section__text {
+  .main__text {
     margin-left: 66px;
     font-size: 60px;
     line-height: 80px;
     margin-bottom: 35px;
   }
 
-  .section__subtitle {
+  .main__subtitle {
     max-width: 297px;
     margin-left: 30px;
     font-size: 18px;
     line-height: 22px;
   }
-
-  .section__button {
+  .main__button {
     margin-top: 16px;
     margin-left: 0px;
   }
-
   .foto {
     display: none;
   }
 }
-
 @media (min-width: 768px) {
   #menu__toggle {
     opacity: 0;
