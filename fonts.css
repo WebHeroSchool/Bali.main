@@ -30,3 +30,9 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Museo Sans Cyrl900";
+  src: url("fonts/MuseoSansCyrl900.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
