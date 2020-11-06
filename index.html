@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="fonts.css" />
     <title>world of travel</title> 
@@ -9,34 +10,41 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="logo"></div>
-        <nav class="menu">
-          <a class="menu__item" href="#">Start</a>
+        <img class="logo" src="image/Vector.svg" alt="Лого">
+        <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          
+       <nav class="menu" >
+         <a class="menu__item" href="#">Start</a>
           <a class="menu__item" href="#">Services</a>
           <a class="menu__item" href="#">About</a>
           <a class="menu__item" href="#">Blog</a>
           <a class="menu__item" href="#">Contact us</a>
         </nav>
+</header>
         </div>
-      </header>
-      <section class="main">
-          <h1 class="main__title">
-         Bali 
-        </h1>
-        <h2 class="main__text">
-          Indonesia
-        </h2>
-        <p class="main__subtitle">
-          Best Bali travel guide with great tips. Book hotels and villas, 
-          explore the best spas, events, Bali temples, scuba centers, and activities.
-        </p>
-        <a class="main__button" href="#"> Book travel </a>
-      </section>
-      <section class="foto">
-        <img class="foto__three foto__three_one" >
-        <img class="foto__three" >
-        <img class="foto__three" >
-      </section>
-    </div>
+      <div class="main">
+        <section class="section">
+          <h1 class="section__title">
+            Bali 
+           </h1>
+           <h2 class="section__text">
+             Indonesia
+           </h2>
+           <p class="section__subtitle">
+             Best Bali travel guide with great tips. Book hotels and villas, 
+             explore the best spas, events, Bali temples, scuba centers, and activities.
+           </p>
+           <a class="section__button" href="#"> Book travel </a>
+        </section>
+          <aside class="foto">
+        <img class="foto__gallery foto__gallery_big" src="image/2.png" alt="1">
+        <img class="foto__gallery " src="image/1.png" alt="2">
+        <img class="foto__gallery " src="image/3.png" alt="3">
+      </aside>
+      </div>
+    
   </body>
 </html>
