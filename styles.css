@@ -305,36 +305,6 @@ body {
     color: #fcc0c0;
   }
 
-  #menu__toggle {
-    opacity: 0;
-  }
-
-  #menu__toggle:checked ~ .menu__btn > span {
-    top: -12px;
-    right: -8px;
-    transform: rotate(45deg);
-    background: black;
-  }
-
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    right: 0;
-    transform: rotate(0);
-    background: black;
-  }
-
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    right: 0;
-    transform: rotate(90deg);
-    background: black;
-  }
-
-  #menu__toggle:checked ~ .menu {
-    visibility: visible;
-    left: 0;
-  }
-
   .menu__btn {
     display: flex;
     align-items: center;
@@ -366,6 +336,36 @@ body {
   .menu__btn > span::after {
     content: "";
     top: 8px;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    top: -12px;
+    right: -8px;
+    transform: rotate(45deg);
+    background: black;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    right: 0;
+    transform: rotate(0);
+    background: black;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+    background: black;
+  }
+
+  #menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
   }
 
   .header {
